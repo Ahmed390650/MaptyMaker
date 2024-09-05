@@ -77,17 +77,46 @@ a:visited {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 0.75rem 1.5rem;
 }
-.workout--running {
+.workout--Running {
   border-left: 5px solid var(--color-brand--2);
 }
-.workout--cycling {
+.workout--Cycling {
   border-left: 5px solid var(--color-brand--1);
+}
+.workout_tit {
+  display: flex;
+  justify-content: space-between;
+  grid-column: 1 / -1;
+}
+.button {
+  display: inline-block;
+  outline: 0;
+  cursor: pointer;
+  text-align: center;
+  border: 0;
+  padding: 7px 16px;
+  min-height: 36px;
+  min-width: 36px;
+  color: #ffffff;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 14px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 0px 0px,
+    rgba(0, 0, 0, 0.2) 0px -1px 0px 0px inset;
+}
+.delete_button {
+  background-color: rgb(255, 71, 66);
+}
+.Edit_button {
+  background-color: rgb(13, 110, 253);
+}
+.button:hover {
+  background: #006e52;
 }
 
 .workout__title {
   font-size: 1.7rem;
   font-weight: 600;
-  grid-column: 1 / -1;
 }
 
 .workout__details {
@@ -212,9 +241,9 @@ a:visited {
   background-color: var(--color-dark--1);
 }
 
-.running-popup .leaflet-popup-content-wrapper {
+.Running-popup .leaflet-popup-content-wrapper {
   border-left: 5px solid var(--color-brand--2);
 }
-.cycling-popup .leaflet-popup-content-wrapper {
+.Cycling-popup .leaflet-popup-content-wrapper {
   border-left: 5px solid var(--color-brand--1);
 }
